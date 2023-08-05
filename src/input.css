@@ -9,7 +9,9 @@
 }
 
 .carousel-item {
-    flex: 0 0 calc(100% / 3.66);
+    /* flex: 0 0 calc(100% / 3.66); */
+    /* flex: 0 0 calc(27.32%); */
+    @apply flex-[0_0_100%] xl:flex-[0_0_27.32%];
     transition: transform 300ms ease;
 }
 
