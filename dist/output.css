@@ -716,6 +716,18 @@ video {
   height: 100%;
 }
 
+.h-\[65px\] {
+  height: 65px;
+}
+
+.h-\[75px\] {
+  height: 75px;
+}
+
+.h-\[55px\] {
+  height: 55px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -867,6 +879,10 @@ video {
   gap: 2rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -978,6 +994,11 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -1101,6 +1122,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -1262,4 +1288,65 @@ video {
 
 .group:hover .group-hover\:pl-24 {
   padding-left: 6rem;
+}
+
+@media (min-width: 1280px) {
+  .xl\:-left-8 {
+    left: -2rem;
+  }
+
+  .xl\:-top-20 {
+    top: -5rem;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:h-\[85px\] {
+    height: 85px;
+  }
+
+  .xl\:h-\[668px\] {
+    height: 668px;
+  }
+
+  .xl\:h-auto {
+    height: auto;
+  }
+
+  .xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .xl\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .xl\:gap-0 {
+    gap: 0px;
+  }
+
+  .xl\:object-none {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+
+  .xl\:text-\[40px\] {
+    font-size: 40px;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
