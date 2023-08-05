@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="min-h-screen w-full bg-red-200 font-[Montserrat]">
+    <nav class="flex justify-between h-[85px] bg-white items-center px-6">
+        <div>
+            <a class="font-extrabold text-[#ff4f37] text-[40px]">EVNX.</a>
+        </div>
+        <div class="w-[359px] flex justify-evenly text-xs font-semibold text-[#404040]">
+            <a>HOME</a>
+            <a>BLOG</a>
+            <a>CATEGORY</a>
+            <a>CONTACTS</a>
+        </div>
+        <div>
+            placeholder
+        </div>
+    </nav>
+
+    <header class="h-[668px] bg-[#1e2329] overflow-hidden relative">
+        <img class="absolute left-0 pointer-events-none " src="./assets/images/header/hero-left.png" />
+        <img class="absolute right-0 -top-12 pointer-events-none" src="./assets/images/header/hero-right.png" />
+
+        <div class="flex flex-col w-full h-full text-white px-80 py-16">
+            <div class="flex h-5/6">
+                <div class="flex flex-col w-1/2 gap-6">
+                    <p class="text-6xl font-bold">TEIXEIRA ADVENTURE</p>
+                    <p class="text-xl">ADVANCED POLYCARBONATE COMPOSITE SHELL</p>
+                </div>
+                <div class="h-full w-1/2 flex items-center justify-center">
+                    <img class="z-20 absolute" src="./assets/images/header/helmet.png" />
+                </div>
+            </div>
+            <div class="flex h-1/6">
+                <div class="flex">
+                    <p>color</p>
+                    <p>price</p>
+                    <p>view product</p>
+                </div>
+                <div>
+                    <p>share</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-11 flex flex-col items-center">
+        <h2 class="text-3xl">NEW PRODUCTS</h2>
+        <div class="h-[419px] bg-yellow-100 w-full">
+
+            <div class="carousel-container relative overflow-hidden w-full h-[419px]">
+                <div class="carousel-track flex transition-transform duration-300 h-full w-full">
+                    <div class="carousel-item w-full h-full bg-red-400">1</div>
+                    <div class="carousel-item w-full h-full bg-green-400">2</div>
+                    <div class="carousel-item w-full h-full bg-blue-400">3</div>
+                    <div class="carousel-item w-full h-full bg-yellow-400">4</div>
+                    <div class="carousel-item w-full h-full bg-purple-400">5</div>
+                    <!-- Add more items as needed -->
+                </div>
+            </div>
+
+
+        </div>
+        <div class="h-[378px] bg-cyan-200 w-full flex justify-center">
+            <div class="w-1/4">left</div>
+            <div class="w-1/4">right</div>
+        </div>
+    </main>
+
+    <script>
+        const carouselTrack = document.querySelector('.carousel-track');
+        let isDragging = false;
+        let startPosition = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+
+        function onTouchStart(e) {
+            if (e.type === 'touchstart') {
+                startPosition = e.touches[0].clientX;
+            } else {
+                startPosition = e.clientX;
+            }
+
+            isDragging = true;
+            carouselTrack.style.transition = 'none';
+        }
+
+        function onTouchMove(e) {
+            if (!isDragging) return;
+
+            let currentPosition;
+            if (e.type === 'touchmove') {
+                currentPosition = e.touches[0].clientX;
+            } else {
+                currentPosition = e.clientX;
+            }
+
+            const diff = currentPosition - startPosition;
+            currentTranslate = prevTranslate + diff;
+            carouselTrack.style.transform = `translateX(${currentTranslate}px)`;
+        }
+
+        function onTouchEnd() {
+            isDragging = false;
+            carouselTrack.style.transition = 'transform 300ms ease';
+
+            // Snap to the closest slide
+            const slideWidth = carouselTrack.children[0].offsetWidth;
+            const slidesToMove = Math.round(currentTranslate / slideWidth);
+            prevTranslate = slidesToMove * slideWidth;
+            carouselTrack.style.transform = `translateX(${prevTranslate}px)`;
+        }
+
+        carouselTrack.addEventListener('touchstart', onTouchStart);
+        carouselTrack.addEventListener('touchmove', onTouchMove);
+        carouselTrack.addEventListener('touchend', onTouchEnd);
+
+        carouselTrack.addEventListener('mousedown', onTouchStart);
+        carouselTrack.addEventListener('mousemove', onTouchMove);
+        carouselTrack.addEventListener('mouseup', onTouchEnd);
+        carouselTrack.addEventListener('mouseleave', onTouchEnd);
+
+
+    </script>
+
+    <script>
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+            ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+
+</body>
+
+
+</html>
