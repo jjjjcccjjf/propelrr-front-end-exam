@@ -14,49 +14,74 @@
 
 <body class="min-h-screen w-full font-[Montserrat]">
     <nav class="flex justify-between h-[85px] bg-white items-center px-6 ">
-        <div>
-            <a class="font-extrabold text-[#ff4f37] text-[40px]">EVNX.</a>
-        </div>
-        <div class="w-[359px]  text-xs font-semibold text-[#404040] ">
-            <ul class="flex justify-evenly h-[85px] items-center">
-                <li class="px-4 h-10 flex justify-center items-center border-r border-r-black/10">
-                    <a href="#">HOME</a>
-                </li>
-                <li class="px-4 h-10 flex justify-center items-center border-r border-r-black/10">
-                    <a href="#">BLOG</a>
-                </li>
-                <li class=" z-30 relative px-4 h-10 flex justify-center items-center border-r border-r-black/10">
-                    <a href="#">CATEGORY</a>
-                    <ul class="absolute top-[62px] left-0 flex flex-col w-[281px]">
-                        <li
-                            class="h-[60px] w-[280px] bg-[#f3f3f3] flex justify-center items-center gap-6 border-t border-t-black/10">
+        <a class="font-extrabold text-[#ff4f37] text-[40px]">EVNX.</a>
+        <ul class="flex justify-evenly h-[85px] items-center w-[359px]  text-xs font-semibold text-[#404040]">
+            <li class="px-4 h-full flex justify-center items-center border-r border-r-black/10">
+                <a href="#">HOME</a>
+            </li>
+            <li class="px-4 h-full flex justify-center items-center border-r border-r-black/10">
+                <a href="#">BLOG</a>
+            </li>
+            <li class=" z-30 relative px-4 h-full flex justify-center items-center border-r border-r-black/10 category">
+                <a href="#" class="flex justify-center items-center gap-2">CATEGORY <img
+                        src="assets/images/icons/caret-down.png" alt=""></a>
+                <ul class="absolute top-[85px] left-0 flex flex-col w-[281px] category hidden">
+                    <li class="h-[60px] w-[280px] bg-[#f3f3f3]  border-t border-t-black/10">
+                        <a href="#" class="w-full h-full pl-4 flex justify-start  items-center gap-6">
                             <img src="assets/images/icons/helmicon1.png" alt="">FULL FACE HELMET
-                        </li>
-                        <li
-                            class="h-[60px] w-[280px] bg-[#f3f3f3] flex justify-center items-center gap-6 border-t border-t-black/10">
+                        </a>
+                    </li>
+                    <li class="h-[60px] w-[280px] bg-[#f3f3f3]  border-t border-t-black/10">
+                        <a href="#" class="w-full h-full pl-4 flex justify-start  items-center gap-6">
                             <img src="assets/images/icons/helmicon2.png" alt="">MODULAR HELMET
-                        </li>
-                        <li
-                            class="h-[60px] w-[280px] bg-[#f3f3f3] flex justify-center items-center gap-6 border-t border-t-black/10">
+                        </a>
+                    </li>
+                    <li class="h-[60px] w-[280px] bg-[#f3f3f3]  border-t border-t-black/10">
+                        <a href="#" class="w-full h-full pl-4 flex justify-start  items-center gap-6">
                             <img src="assets/images/icons/helmicon3.png" alt="">HALF FACE HELMET
-                        </li>
-                    </ul>
-                </li>
-                <li class="px-4 h-10 flex justify-center items-center">
-                    <a href="#">CONTACTS</a>
-                </li>
-            </ul>
-        </div>
-        <div class="flex justify-end items-center gap-8 ">
-            <a class="text-[10px]" href="#">USD</a>
-            <form onsubmit="event.preventDefault()" class="relative">
-                <input type="text" name="search_query"
-                    class="w-[215px] h-[42px] p-3 border border-black/10 placeholder:text-[10px] text-xs" placeholder="SEARCH">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="px-4 h-full flex justify-center items-center">
+                <a href="#">CONTACTS</a>
+            </li>
+        </ul>
+        <ul class="flex justify-end items-center gap-8 ">
+            <li class="relative z-30 currency">
+                <a class="text-[10px] font-semibold flex justify-center items-center gap-2 currency" href="#">USD <img
+                        src="assets/images/icons/caret-down.png" alt=""></a>
+                <ul class="absolute text-[10px] font-semibold currency flex flex-col inset-y-5 hidden">
+                    <li>
+                        <a href="#">PHP</a>
+                    </li>
+                    <li>
+                        <a href="#">EUR</a>
+                    </li>
+                    <li>
+                        <a href="#">JPY</a>
+                    </li>
+                    <li>
+                        <a href="#">JPY</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <form onsubmit="event.preventDefault()" class="relative">
+                    <input type="text" name="search_query"
+                        class="w-[215px] h-[42px] p-3 border border-black/10 placeholder:text-[10px] text-xs"
+                        placeholder="SEARCH">
                     <img src="assets/images/icons/search.png" alt="" class="absolute right-3 top-[0.88rem]">
-            </form>
-            <a href="#"><img src="assets/images/icons/cart.png" alt=""></a>
-            <a href="#"><img src="assets/images/icons/user.png" alt=""></a>
-        </div>
+                </form>
+            </li>
+            <li>
+                <a href="#"><img src="assets/images/icons/cart.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="assets/images/icons/user.png" alt=""></a>
+            </li>
+        </ul>
+
     </nav>
 
     <header class="h-[668px] bg-[#1e2329] overflow-hidden relative">
@@ -358,62 +383,9 @@
         <div class="h-40"></div>
     </main>
 
-    <script>
-        const carouselTrack = document.querySelector('.carousel-track');
-        let isDragging = false;
-        let startPosition = 0;
-        let currentTranslate = 0;
-        let prevTranslate = 0;
-
-        function onTouchStart(e) {
-            if (e.type === 'touchstart') {
-                startPosition = e.touches[0].clientX;
-            } else {
-                startPosition = e.clientX;
-            }
-
-            isDragging = true;
-            carouselTrack.style.transition = 'none';
-        }
-
-        function onTouchMove(e) {
-            if (!isDragging) return;
-
-            let currentPosition;
-            if (e.type === 'touchmove') {
-                currentPosition = e.touches[0].clientX;
-            } else {
-                currentPosition = e.clientX;
-            }
-
-            const diff = currentPosition - startPosition;
-            currentTranslate = prevTranslate + diff;
-            carouselTrack.style.transform = `translateX(${currentTranslate}px)`;
-        }
-
-        function onTouchEnd() {
-            isDragging = false;
-            carouselTrack.style.transition = 'transform 300ms ease';
-
-            // Snap to the closest slide
-            const slideWidth = carouselTrack.children[0].offsetWidth;
-            const slidesToMove = Math.round(currentTranslate / slideWidth);
-            prevTranslate = slidesToMove * slideWidth;
-            carouselTrack.style.transform = `translateX(${prevTranslate}px)`;
-        }
-
-        carouselTrack.addEventListener('touchstart', onTouchStart);
-        carouselTrack.addEventListener('touchmove', onTouchMove);
-        carouselTrack.addEventListener('touchend', onTouchEnd);
-
-        carouselTrack.addEventListener('mousedown', onTouchStart);
-        carouselTrack.addEventListener('mousemove', onTouchMove);
-        carouselTrack.addEventListener('mouseup', onTouchEnd);
-        carouselTrack.addEventListener('mouseleave', onTouchEnd);
-
-
-    </script>
-
+    <script src="./assets/js/currencyDropdownHandler.js"></script>
+    <script src="./assets/js/categoryDropdownHandler.js"></script>
+    <script src="./assets/js/carousel.js"></script>
     <script>
         document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
             ':35729/livereload.js?snipver=1"></' + 'script>')
