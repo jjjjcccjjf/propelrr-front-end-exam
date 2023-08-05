@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body class="min-h-screen w-full font-[Montserrat]">
@@ -29,26 +30,38 @@
 
     <header class="h-[668px] bg-[#1e2329] overflow-hidden relative">
         <img class="absolute left-0 pointer-events-none " src="./assets/images/header/hero-left.png" />
-        <img class="absolute right-0 -top-12 pointer-events-none" src="./assets/images/header/hero-right.png" />
+        <img class="absolute right-0 -top-[5.7rem] pointer-events-none" src="./assets/images/header/hero-right.png" />
 
-        <div class="flex flex-col w-full h-full text-white px-80 py-16">
+        <div class="flex flex-col h-full text-white w-2/3 py-16 justify-center mx-auto">
             <div class="flex h-5/6">
-                <div class="flex flex-col w-1/2 gap-6">
+                <div class="flex flex-col w-1/2 gap-6 z-20 justify-center">
                     <p class="text-6xl font-bold">TEIXEIRA ADVENTURE</p>
-                    <p class="text-xl">ADVANCED POLYCARBONATE COMPOSITE SHELL</p>
+                    <p class="text-xl w-2/3">ADVANCED POLYCARBONATE COMPOSITE SHELL</p>
                 </div>
                 <div class="h-full w-1/2 flex items-center justify-center">
                     <img class="z-20 absolute" src="./assets/images/header/helmet.png" />
                 </div>
             </div>
-            <div class="flex h-1/6">
+            <div class="flex h-1/6 justify-between z-20">
                 <div class="flex">
-                    <p>color</p>
-                    <p>price</p>
-                    <p>view product</p>
+                    <button
+                        class="h-12 w-28 font-bold text-xs bg-white border border-black/30 text-[#404040] flex justify-evenly items-center shadow-lg">
+                        COLOR
+                        <div class="w-4 h-4 flex justify-center rotate-45">
+                            <span class="h-4 w-2 bg-[#fc701d] rounded-full rounded-r-none"></span>
+                            <span class="h-4 w-2 bg-[#252525] rounded-full rounded-l-none"></span>
+                        </div>
+                    </button>
+                    <button
+                        class="h-12 w-28 font-bold text-xs bg-white border border-black/30 text-[#404040] flex justify-evenly items-center shadow-lg">
+                        PRICE
+                        <span class="text-xs text-[#ff4f37]">$125.9</span>
+                    </button>
+                    <button class="h-12 w-32 font-bold text-xs bg-[#ff4f37] border border-black/30 text-white shadow-lg">VIEW
+                        PRODUCT</button>
                 </div>
                 <div>
-                    <p>share</p>
+                    <button class="h-12 w-14 shadow-lg bg-white flex justify-center items-center"><img src="assets/images/icons/search.png" alt=""></button>
                 </div>
             </div>
         </div>
@@ -71,8 +84,8 @@
 
 
         </div>
-        <div class="h-[378px]  w-3/5 flex ">
-            <div class="w-1/3">
+        <div class="w-3/5 flex gap-24 ">
+            <div class="w-1/3 ">
                 <div class="flex justify-between border-b border-b-black/10 items-center py-2">
                     <h2 class="text-lg text-[#404040] font-bold">BLOG x EVENTS</h2>
                     <a class="text-xs text-[#ff4f37] underline font-bold">SEE ALL</a>
@@ -125,8 +138,25 @@
 
                 </div>
             </div>
-            <div class="w-2/3">right</div>
+
+            <div class="w-2/3  relative flex flex-col items-end">
+                <div
+                    class="bg-[url('../src/assets/images/shop-now-CTA/cta-bg.png')] w-[560px] h-full bg-cover p-12 flex justify-end">
+                    <div class="text-white w-1/2 text-right z-20 flex flex-col items-end">
+                        <p class="text-4xl font-bold pb-3">AGV<br />BEST<br />SELLERS</p>
+                        <div class="w-16 border-b border-b-white/50"></div>
+                        <p class="text-xs pt-4">SEE OUR MOST POPULAR PRODUCTS</p>
+                        <button class="mt-12 h-10 w-28 bg-[#ff4f37] text-xs font-bold">SHOP NOW</button>
+                    </div>
+                </div>
+                <div class="bg-black/30 absolute h-full w-full pointer-events-none z-10"></div>
+                <div class="absolute z-20 pointer-events-none left-10 top-5">
+                    <img src="assets/images/shop-now-CTA/cta-helmet.png" class="w-4/5 h-4/5" alt="alt here">
+                </div>
+            </div>
         </div>
+
+        <div class="h-40"></div>
     </main>
 
     <script>
