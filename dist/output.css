@@ -574,6 +574,46 @@ video {
   top: 0.5rem;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
+.left-\[40\%\] {
+  left: 40%;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.top-\[60\%\] {
+  top: 60%;
+}
+
+.top-\[55\%\] {
+  top: 55%;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
+.left-\[60\%\] {
+  left: 60%;
+}
+
+.left-\[35\%\] {
+  left: 35%;
+}
+
+.left-\[38\%\] {
+  left: 38%;
+}
+
+.top-\[45\%\] {
+  top: 45%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -586,24 +626,8 @@ video {
   z-index: 30;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
-.-z-50 {
-  z-index: -50;
-}
-
-.z-\[100\] {
-  z-index: 100;
-}
-
 .z-\[50\] {
   z-index: 50;
-}
-
-.-z-30 {
-  z-index: -30;
 }
 
 .mx-auto {
@@ -617,6 +641,14 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .flex {
@@ -751,6 +783,10 @@ video {
   width: 100%;
 }
 
+.w-\[55\%\] {
+  width: 55%;
+}
+
 .max-w-\[150px\] {
   max-width: 150px;
 }
@@ -762,6 +798,12 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .flex-col {
@@ -844,6 +886,14 @@ video {
 
 .border-b-white\/50 {
   border-bottom-color: rgb(255 255 255 / 0.5);
+}
+
+.border-b-white\/70 {
+  border-bottom-color: rgb(255 255 255 / 0.7);
+}
+
+.border-b-white\/80 {
+  border-bottom-color: rgb(255 255 255 / 0.8);
 }
 
 .bg-\[\#1e2329\] {
@@ -946,6 +996,14 @@ video {
   padding-top: 1.25rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .text-right {
   text-align: right;
 }
@@ -1000,6 +1058,11 @@ video {
   line-height: 1rem;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1014,6 +1077,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .tracking-wide {
@@ -1046,6 +1113,18 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black\/10 {
+  color: rgb(0 0 0 / 0.1);
+}
+
+.text-black\/20 {
+  color: rgb(0 0 0 / 0.2);
+}
+
+.text-black\/30 {
+  color: rgb(0 0 0 / 0.3);
 }
 
 .underline {
@@ -1108,12 +1187,48 @@ video {
 }
 
 .carousel-item {
-  flex: 0 0 calc(100% / 4.3);
+  flex: 0 0 calc(100% / 3.66);
   transition: transform 300ms ease;
+}
+
+.hover\:mx-8:hover {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.hover\:mx-4:hover {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .hover\:w-\[730px\]:hover {
   width: 730px;
+}
+
+.hover\:w-\[710px\]:hover {
+  width: 710px;
+}
+
+.hover\:w-\[6800px\]:hover {
+  width: 6800px;
+}
+
+.hover\:w-\[680px\]:hover {
+  width: 680px;
+}
+
+.hover\:w-\[580px\]:hover {
+  width: 580px;
+}
+
+.hover\:px-4:hover {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hover\:px-8:hover {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .group:hover .group-hover\:bottom-16 {
