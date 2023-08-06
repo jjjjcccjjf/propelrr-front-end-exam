@@ -84,50 +84,155 @@
 
     </nav>
 
-    <header class="xl:h-[668px] bg-[#1e2329] overflow-hidden relative">
-        <img class="absolute xl:-left-8 h-full object-cover xl:object-none xl:h-auto xl:-top-20 xl:w-auto lg:w-full pointer-events-none "
-            src="./assets/images/header/hero-left.png" />
-        <img class="hidden md:block md:h-[440px] xl:h-auto xl:block absolute -right-8 md:-top-[3rem] xl:-top-[5.7rem] pointer-events-none"
-            src="./assets/images/header/hero-right.png" />
+    <header
+        class="xl:h-[668px] bg-[#1e2329] overflow-hidden relative w-full h-full hero-carousel-container ">
+        <div class="xl:h-[668px] hero-carousel-track transition-all duration-700 ease-in">
 
-        <div
-            class="flex flex-col h-full text-white w-2/3 md:w-3/4 lg:w-2/3 xl:w-2/3 py-16 justify-center mx-auto gap-3 md:gap-8 xl:gap-0">
-            <div class="flex h-5/6">
-                <div class="flex flex-col w-1/2 gap-2 md:gap-6  z-20 justify-center">
-                    <p class="text-2xl md:text-4xl xl:text-6xl font-bold tracking-widest">TEIXEIRA ADVENTURE</p>
-                    <p class="text-md xl:text-xl w-full xl:w-2/3 tracking-wider">ADVANCED POLYCARBONATE COMPOSITE SHELL
-                    </p>
-                </div>
-                <div class="h-full w-1/2 hidden md:flex xl:flex items-center justify-center">
-                    <img class="z-20 absolute xl:h-auto xl:w-auto md:w-52 md:right-8 md:top-14 lg:right-48 2xl:right-[345px]"
-                        src="./assets/images/header/helmet.png" />
-                </div>
-            </div>
-            <div class="flex h-1/6 justify-between md:justify-start xl:justify-between z-20">
-                <div class="flex">
-                    <button
-                        class="h-12 w-32 xl:h-12 xl:w-32 md:w-28 font-bold text-xs bg-white border border-black/30 text-[#404040] hidden md:flex xl:flex justify-evenly items-center shadow-lg tracking-wider">
-                        COLOR
-                        <div class="w-4 h-4 flex justify-center rotate-45">
-                            <span class="h-4 w-2 bg-[#fc701d] rounded-full rounded-r-none"></span>
-                            <span class="h-4 w-2 bg-[#252525] rounded-full rounded-l-none"></span>
+            <div class="xl:h-[668px] hero-carousel-item w-full relative">
+                <img class="absolute  h-full object-cover xl:object-none xl:h-auto xl:-top-20 xl:w-auto lg:w-full pointer-events-none "
+                    src="./assets/images/header/hero-left.png" />
+                <img class="hidden md:block md:h-[460px] xl:h-auto xl:block absolute right-0 md:-top-[3rem] xl:-top-[5.7rem] pointer-events-none"
+                    src="./assets/images/header/hero-right.png" />
+
+                <div
+                    class="flex flex-col h-full text-white w-2/3 md:w-3/4 lg:w-2/3 xl:w-2/3 py-8 md:py-16 justify-center mx-auto gap-36 md:gap-8 xl:gap-0">
+                    <div class="flex h-5/6">
+                        <div class="flex flex-col w-1/2 gap-2 md:gap-6  z-20 justify-center">
+                            <p class="text-2xl md:text-4xl xl:text-6xl font-bold tracking-widest">TEIXEIRA ADVENTURE</p>
+                            <p class="text-[10px] md:text-base xl:text-xl w-full xl:w-2/3 tracking-wider">ADVANCED POLYCARBONATE COMPOSITE SHELL</p>
                         </div>
-                    </button>
-                    <button
-                        class="h-12 w-32 xl:h-12 xl:w-32 md:w-28 font-bold text-xs bg-white border border-black/30 text-[#404040] hidden md:flex xl:flex justify-evenly items-center shadow-lg tracking-wider">
-                        PRICE
-                        <span class="text-xs text-[#ff4f37] tracking-wider">$125.9</span>
-                    </button>
-                    <button
-                        class="h-12 w-36 xl:h-12 xl:w-36 md:w-32 font-bold text-xs bg-[#ff4f37] border border-black/30 text-white shadow-lg tracking-wider">VIEW
-                        PRODUCT</button>
+                        <div class="h-full w-1/2 md:flex xl:flex items-center justify-center">
+                            <img class="z-20 absolute h-28 top-48 left-16 md:left-auto md:h-auto xl:h-auto xl:w-auto md:w-52 md:right-28 md:top-14 lg:right-48 2xl:right-[375px]"
+                                src="./assets/images/header/helmet.png" />
+                        </div>
+                    </div>
+                    <div class="flex h-1/6 justify-between md:justify-start xl:justify-between z-20">
+                        <div class="flex">
+                            <button
+                                class="h-12 w-32 xl:h-12 xl:w-32 md:w-28 font-bold text-xs bg-white border border-black/30 text-[#404040] hidden md:flex xl:flex justify-evenly items-center shadow-lg tracking-wider">
+                                COLOR
+                                <div class="w-4 h-4 flex justify-center rotate-45">
+                                    <span class="h-4 w-2 bg-[#fc701d] rounded-full rounded-r-none"></span>
+                                    <span class="h-4 w-2 bg-[#252525] rounded-full rounded-l-none"></span>
+                                </div>
+                            </button>
+                            <button
+                                class="h-12 w-32 xl:h-12 xl:w-32 md:w-28 font-bold text-xs bg-white border border-black/30 text-[#404040] hidden md:flex xl:flex justify-evenly items-center shadow-lg tracking-wider">
+                                PRICE
+                                <span class="text-xs text-[#ff4f37] tracking-wider">$125.9</span>
+                            </button>
+                            <button
+                                class="h-12 w-36 xl:h-12 xl:w-36 md:w-32 font-bold text-xs bg-[#ff4f37] border border-black/30 text-white shadow-lg tracking-wider">VIEW
+                                PRODUCT</button>
+                        </div>
+                        <div class="hidden xl:block">
+                            <button class="h-12 w-14 shadow-lg bg-white flex justify-center items-center"><img
+                                    src="assets/images/icons/share.png" alt=""></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="hidden xl:block">
-                    <button class="h-12 w-14 shadow-lg bg-white flex justify-center items-center"><img
-                            src="assets/images/icons/share.png" alt=""></button>
+
+            </div> 
+
+            
+            <div class="xl:h-[668px] hero-carousel-item w-full relative">
+                <img class="absolute  h-full object-cover xl:object-none xl:h-auto xl:-top-20 xl:w-auto lg:w-full pointer-events-none "
+                    src="./assets/images/header/hero-left.png" />
+                <img class="hidden md:block md:h-[460px] xl:h-auto xl:block absolute right-0 md:-top-[3rem] xl:-top-[5.7rem] pointer-events-none"
+                    src="./assets/images/header/hero-right.png" />
+
+                <div
+                    class="flex flex-col h-full text-white w-2/3 md:w-3/4 lg:w-2/3 xl:w-2/3 py-8 md:py-16 justify-center mx-auto gap-36 md:gap-8 xl:gap-0">
+                    <div class="flex h-5/6">
+                        <div class="flex flex-col w-1/2 gap-2 md:gap-6  z-20 justify-center">
+                            <p class="text-2xl md:text-4xl xl:text-6xl font-bold tracking-widest">TEIXEIRA ADVENTURE 2</p>
+                            <p class="text-[10px] md:text-base xl:text-xl w-full xl:w-2/3 tracking-wider">ADVANCED POLYCARBONATE COMPOSITE SHELL</p>
+                        </div>
+                        <div class="h-full w-1/2 md:flex xl:flex items-center justify-center">
+                            <img class="z-20 absolute h-28 top-48 left-16 md:left-auto md:h-auto xl:h-auto xl:w-auto md:w-52 md:right-28 md:top-14 lg:right-48 2xl:right-[375px]"
+                                src="./assets/images/header/helmet.png" />
+                        </div>
+                    </div>
+                    <div class="flex h-1/6 justify-between md:justify-start xl:justify-between z-20">
+                        <div class="flex">
+                            <button
+                                class="h-12 w-32 xl:h-12 xl:w-32 md:w-28 font-bold text-xs bg-white border border-black/30 text-[#404040] hidden md:flex xl:flex justify-evenly items-center shadow-lg tracking-wider">
+                                COLOR
+                                <div class="w-4 h-4 flex justify-center rotate-45">
+                                    <span class="h-4 w-2 bg-[#fc701d] rounded-full rounded-r-none"></span>
+                                    <span class="h-4 w-2 bg-[#252525] rounded-full rounded-l-none"></span>
+                                </div>
+                            </button>
+                            <button
+                                class="h-12 w-32 xl:h-12 xl:w-32 md:w-28 font-bold text-xs bg-white border border-black/30 text-[#404040] hidden md:flex xl:flex justify-evenly items-center shadow-lg tracking-wider">
+                                PRICE
+                                <span class="text-xs text-[#ff4f37] tracking-wider">$125.9</span>
+                            </button>
+                            <button
+                                class="h-12 w-36 xl:h-12 xl:w-36 md:w-32 font-bold text-xs bg-[#ff4f37] border border-black/30 text-white shadow-lg tracking-wider">VIEW
+                                PRODUCT</button>
+                        </div>
+                        <div class="hidden xl:block">
+                            <button class="h-12 w-14 shadow-lg bg-white flex justify-center items-center"><img
+                                    src="assets/images/icons/share.png" alt=""></button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+            </div> 
+
+            
+            <div class="xl:h-[668px] hero-carousel-item w-full relative">
+                <img class="absolute  h-full object-cover xl:object-none xl:h-auto xl:-top-20 xl:w-auto lg:w-full pointer-events-none "
+                    src="./assets/images/header/hero-left.png" />
+                <img class="hidden md:block md:h-[460px] xl:h-auto xl:block absolute right-0 md:-top-[3rem] xl:-top-[5.7rem] pointer-events-none"
+                    src="./assets/images/header/hero-right.png" />
+
+                <div
+                    class="flex flex-col h-full text-white w-2/3 md:w-3/4 lg:w-2/3 xl:w-2/3 py-8 md:py-16 justify-center mx-auto gap-36 md:gap-8 xl:gap-0">
+                    <div class="flex h-5/6">
+                        <div class="flex flex-col w-1/2 gap-2 md:gap-6  z-20 justify-center">
+                            <p class="text-2xl md:text-4xl xl:text-6xl font-bold tracking-widest">TEIXEIRA ADVENTURE 3</p>
+                            <p class="text-[10px] md:text-base xl:text-xl w-full xl:w-2/3 tracking-wider">ADVANCED POLYCARBONATE COMPOSITE SHELL</p>
+                        </div>
+                        <div class="h-full w-1/2 md:flex xl:flex items-center justify-center">
+                            <img class="z-20 absolute h-28 top-48 left-16 md:left-auto md:h-auto xl:h-auto xl:w-auto md:w-52 md:right-28 md:top-14 lg:right-48 2xl:right-[375px]"
+                                src="./assets/images/header/helmet.png" />
+                        </div>
+                    </div>
+                    <div class="flex h-1/6 justify-between md:justify-start xl:justify-between z-20">
+                        <div class="flex">
+                            <button
+                                class="h-12 w-32 xl:h-12 xl:w-32 md:w-28 font-bold text-xs bg-white border border-black/30 text-[#404040] hidden md:flex xl:flex justify-evenly items-center shadow-lg tracking-wider">
+                                COLOR
+                                <div class="w-4 h-4 flex justify-center rotate-45">
+                                    <span class="h-4 w-2 bg-[#fc701d] rounded-full rounded-r-none"></span>
+                                    <span class="h-4 w-2 bg-[#252525] rounded-full rounded-l-none"></span>
+                                </div>
+                            </button>
+                            <button
+                                class="h-12 w-32 xl:h-12 xl:w-32 md:w-28 font-bold text-xs bg-white border border-black/30 text-[#404040] hidden md:flex xl:flex justify-evenly items-center shadow-lg tracking-wider">
+                                PRICE
+                                <span class="text-xs text-[#ff4f37] tracking-wider">$125.9</span>
+                            </button>
+                            <button
+                                class="h-12 w-36 xl:h-12 xl:w-36 md:w-32 font-bold text-xs bg-[#ff4f37] border border-black/30 text-white shadow-lg tracking-wider">VIEW
+                                PRODUCT</button>
+                        </div>
+                        <div class="hidden xl:block">
+                            <button class="h-12 w-14 shadow-lg bg-white flex justify-center items-center"><img
+                                    src="assets/images/icons/share.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
         </div>
+
+        <button class="h-full w-1/12 prev-button absolute top-0 flex justify-center items-center left-3 z-40 lg:left-10 md:left-6 xl:left-2"><img src="assets/images/icons/leftarr.png"
+                alt="" class="md:h-auto md:w-auto h-3 w-3"></button>
+        <button class="h-full w-1/12 next-button absolute top-0 flex justify-center items-center right-3 z-40 lg:right-10 md:right-6 xl:right-2"><img src="assets/images/icons/rightarr.png"
+                alt="" class="md:h-auto md:w-auto h-3 w-3"></button>
     </header>
 
     <main class=" flex flex-col items-center relative overflow-hidden">
@@ -337,7 +442,8 @@
                 </div>
                 <div
                     class="hidden md:block xl:block absolute z-20 pointer-events-none 2xl:-left-5 xl:-left-8 xl:top-2 md:left-0 md:-top-8 lg:left-24">
-                    <img src="assets/images/shop-now-CTA/cta-helmet.png" class="md:scale-75 2xl:scale-100 xl:scale-90" alt="alt here">
+                    <img src="assets/images/shop-now-CTA/cta-helmet.png" class="md:scale-75 2xl:scale-100 xl:scale-90"
+                        alt="alt here">
                 </div>
             </div>
         </div>
@@ -347,6 +453,7 @@
 
     <script src="./assets/js/currencyDropdownHandler.js"></script>
     <script src="./assets/js/categoryDropdownHandler.js"></script>
+    <script src="./assets/js/heroCarousel.js"></script>
     <script src="./assets/js/carousel.js"></script>
     <script>
         document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
