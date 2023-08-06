@@ -15,7 +15,7 @@
 <body class="min-h-screen w-full font-[Montserrat]">
     <nav class="sticky top-0 flex justify-between h-[55px] xl:h-[85px] bg-white items-center px-6 z-40">
         <a class="font-extrabold text-[#ff4f37] text-xl xl:text-[40px]">EVNX.</a>
-        <ul class="hidden xl:flex justify-evenly h-[85px] items-center w-[359px]  text-xs font-semibold text-[#404040]">
+        <ul class="hidden lg:flex justify-evenly h-[85px] items-center w-[359px]  text-xs font-semibold text-[#404040]">
             <li class="px-4 h-full flex justify-center items-center border-r border-r-black/10">
                 <a href="#">HOME</a>
             </li>
@@ -47,7 +47,7 @@
                 <a href="#">CONTACTS</a>
             </li>
         </ul>
-        <ul class="hidden xl:flex justify-end items-center gap-8 ">
+        <ul class="hidden lg:flex justify-end items-center gap-8 ">
             <li class="relative z-30 currency">
                 <a class="text-[10px] font-semibold flex justify-center items-center gap-2 currency"
                     onclick="return false" href="#">USD <img src="assets/images/icons/caret-down.png" alt=""></a>
@@ -85,12 +85,13 @@
     </nav>
 
     <header class="xl:h-[668px] bg-[#1e2329] overflow-hidden relative">
-        <img class="absolute xl:-left-8 h-full object-cover xl:object-none xl:h-auto xl:-top-20 pointer-events-none "
+        <img class="absolute xl:-left-8 h-full object-cover xl:object-none xl:h-auto xl:-top-20 xl:w-auto lg:w-full pointer-events-none "
             src="./assets/images/header/hero-left.png" />
         <img class="hidden md:block md:h-[440px] xl:h-auto xl:block absolute -right-8 md:-top-[3rem] xl:-top-[5.7rem] pointer-events-none"
             src="./assets/images/header/hero-right.png" />
 
-        <div class="flex flex-col h-full text-white w-2/3 md:w-3/4 xl:w-2/3 py-16 justify-center mx-auto gap-3 md:gap-8 xl:gap-0">
+        <div
+            class="flex flex-col h-full text-white w-2/3 md:w-3/4 lg:w-2/3 xl:w-2/3 py-16 justify-center mx-auto gap-3 md:gap-8 xl:gap-0">
             <div class="flex h-5/6">
                 <div class="flex flex-col w-1/2 gap-2 md:gap-6  z-20 justify-center">
                     <p class="text-2xl md:text-4xl xl:text-6xl font-bold tracking-widest">TEIXEIRA ADVENTURE</p>
@@ -98,7 +99,8 @@
                     </p>
                 </div>
                 <div class="h-full w-1/2 hidden md:flex xl:flex items-center justify-center">
-                    <img class="z-20 absolute xl:h-auto xl:w-auto md:w-52 md:right-8 md:top-14" src="./assets/images/header/helmet.png" />
+                    <img class="z-20 absolute xl:h-auto xl:w-auto md:w-52 md:right-8 md:top-14 lg:right-48 xl:right-auto"
+                        src="./assets/images/header/helmet.png" />
                 </div>
             </div>
             <div class="flex h-1/6 justify-between md:justify-start xl:justify-between z-20">
@@ -142,7 +144,7 @@
 
                     <div class="carousel-item w-full xl:h-[290px] flex justify-center items-center">
                         <div
-                            class="xl:h-[290px] w-full xl:w-[408px] bg-[#f9f9f9] relative hover:w-[730px] group duration-700 ease-in-out hover:mx-4 transition-all">
+                            class="xl:h-[290px] w-full xl:w-[408px] bg-[#f9f9f9] relative xl:hover:w-[730px] group duration-700 ease-in-out xl:hover:mx-4 transition-all">
                             <div
                                 class="xl:w-[408px] flex flex-col p-5 xl:p-10 xl:group-hover:pl-24 gap-6 transition-all duration-700 ease-in-out">
                                 <p class="text-[#a3a3a3] text-lg xl:text-xl tracking-wide">HJC CL-17 CAPTAIN AMERICA
@@ -162,7 +164,7 @@
 
                     <div class="carousel-item w-full xl:h-[290px] flex justify-center items-center">
                         <div
-                            class="xl:h-[290px] w-full xl:w-[408px] bg-[#f9f9f9] relative hover:w-[730px] group duration-700 ease-in-out hover:mx-4 transition-all">
+                            class="xl:h-[290px] w-full xl:w-[408px] bg-[#f9f9f9] relative xl:hover:w-[730px] group duration-700 ease-in-out xl:hover:mx-4 transition-all">
                             <div
                                 class="xl:w-[408px] flex flex-col p-5 xl:p-10 xl:group-hover:pl-24 gap-6 transition-all duration-700 ease-in-out">
                                 <p class="text-[#a3a3a3] text-lg xl:text-xl tracking-wide">HJC CL-17 CAPTAIN AMERICA
@@ -179,10 +181,9 @@
                         </div>
                     </div>
 
-
                     <div class="carousel-item w-full xl:h-[290px] flex justify-center items-center">
                         <div
-                            class="xl:h-[290px] w-full xl:w-[408px] bg-[#f9f9f9] relative hover:w-[730px] group duration-700 ease-in-out hover:mx-4 transition-all">
+                            class="xl:h-[290px] w-full xl:w-[408px] bg-[#f9f9f9] relative xl:hover:w-[730px] group duration-700 ease-in-out xl:hover:mx-4 transition-all">
                             <div
                                 class="xl:w-[408px] flex flex-col p-5 xl:p-10 xl:group-hover:pl-24 gap-6 transition-all duration-700 ease-in-out">
                                 <p class="text-[#a3a3a3] text-lg xl:text-xl tracking-wide">HJC CL-17 CAPTAIN AMERICA
@@ -199,10 +200,9 @@
                         </div>
                     </div>
 
-
                     <div class="carousel-item w-full xl:h-[290px] flex justify-center items-center">
                         <div
-                            class="xl:h-[290px] w-full xl:w-[408px] bg-[#f9f9f9] relative hover:w-[730px] group duration-700 ease-in-out hover:mx-4 transition-all">
+                            class="xl:h-[290px] w-full xl:w-[408px] bg-[#f9f9f9] relative xl:hover:w-[730px] group duration-700 ease-in-out xl:hover:mx-4 transition-all">
                             <div
                                 class="xl:w-[408px] flex flex-col p-5 xl:p-10 xl:group-hover:pl-24 gap-6 transition-all duration-700 ease-in-out">
                                 <p class="text-[#a3a3a3] text-lg xl:text-xl tracking-wide">HJC CL-17 CAPTAIN AMERICA
@@ -218,11 +218,27 @@
                             </div>
                         </div>
                     </div>
-
-
                     <div class="carousel-item w-full xl:h-[290px] flex justify-center items-center">
                         <div
-                            class="xl:h-[290px] w-full xl:w-[408px] bg-[#f9f9f9] relative hover:w-[730px] group duration-700 ease-in-out hover:mx-4 transition-all">
+                            class="xl:h-[290px] w-full xl:w-[408px] bg-[#f9f9f9] relative xl:hover:w-[730px] group duration-700 ease-in-out xl:hover:mx-4 transition-all">
+                            <div
+                                class="xl:w-[408px] flex flex-col p-5 xl:p-10 xl:group-hover:pl-24 gap-6 transition-all duration-700 ease-in-out">
+                                <p class="text-[#a3a3a3] text-lg xl:text-xl tracking-wide">HJC CL-17 CAPTAIN AMERICA
+                                    (SNELL)</p>
+                                <p class="font-bold text-xl xl:text-3xl font-[#404040]">$350.5</p>
+                                <button class="bg-[#ff4f37] shadow-xl text-white text-xs w-32 h-10 font-bold mt-6">BUY
+                                    NOW</button>
+                            </div>
+
+                            <div
+                                class="absolute right-6 top-20 xl:bottom-8 xl:right-16 duration-700 xl:group-hover:scale-[3.0] xl:group-hover:right-36 xl:group-hover:bottom-16 ease-in-out transition-all pointer-events-none">
+                                <img src="assets/images/new-products/helmet1.png" class="max-w-[150px]" alt="alt here">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item w-full xl:h-[290px] flex justify-center items-center">
+                        <div
+                            class="xl:h-[290px] w-full xl:w-[408px] bg-[#f9f9f9] relative xl:hover:w-[730px] group duration-700 ease-in-out xl:hover:mx-4 transition-all">
                             <div
                                 class="xl:w-[408px] flex flex-col p-5 xl:p-10 xl:group-hover:pl-24 gap-6 transition-all duration-700 ease-in-out">
                                 <p class="text-[#a3a3a3] text-lg xl:text-xl tracking-wide">HJC CL-17 CAPTAIN AMERICA
@@ -247,7 +263,7 @@
         </div>
 
         <div class="w-full xl:w-3/5 flex xl:h-[378px] flex-col-reverse xl:flex-row">
-            <div class="w-full px-4 py-8 xl:p-0 xl:w-1/3 ">
+            <div class="w-full px-4 py-8 xl:p-0 xl:w-1/3 lg:px-48">
                 <div class="flex justify-between border-b border-b-black/10 items-center py-2">
                     <h2 class="text-lg md:text-3xl xl:text-lg text-[#404040] font-bold tracking-wide">BLOG x EVENTS</h2>
                     <a class="text-xs md:text-lg xl:text-xs text-[#ff4f37] underline font-bold">SEE ALL</a>
@@ -309,9 +325,9 @@
 
             <div class="w-full xl:w-2/3 -z-10 relative flex xl:flex-col items-end">
                 <div
-                    class="bg-[url('../src/assets/images/shop-now-CTA/cta-bg.png')] w-full xl:w-[559px] h-full bg-auto bg-center  flex justify-end">
+                    class="bg-[url('../src/assets/images/shop-now-CTA/cta-bg.png')] w-full xl:w-[559px] h-full bg-auto bg-center lg:bg-no-repeat lg:bg-cover xl:bg-auto  flex justify-end">
                     <div
-                        class="text-white w-full xl:w-[55%] text-right z-20 flex flex-col items-end py-8 xl:py-12 pr-12">
+                        class="text-white w-full lg:w-[55%] lg:mx-32 xl:mx-0 text-right z-20 flex flex-col items-end py-8 xl:py-12 pr-12">
                         <p class="text-4xl font-extrabold pb-4 tracking-widest">AGV<br />BEST<br />SELLERS</p>
                         <div class="w-14 border-b border-b-white/80"></div>
                         <p class="text-md xl:text-xs font-semibold pt-5">SEE OUR MOST POPULAR PRODUCTS</p>
@@ -320,8 +336,8 @@
                     <div class="bg-black/40 absolute h-full w-full xl:w-[559px] pointer-events-none z-10"></div>
                 </div>
                 <div
-                    class="hidden md:block xl:block absolute z-20 pointer-events-none xl:-left-5 xl:top-2 md:left-0 md:-top-8">
-                    <img src="assets/images/shop-now-CTA/cta-helmet.png" class="md:scale-75" alt="alt here">
+                    class="hidden md:block xl:block absolute z-20 pointer-events-none xl:-left-5 xl:top-2 md:left-0 md:-top-8 lg:left-24">
+                    <img src="assets/images/shop-now-CTA/cta-helmet.png" class="md:scale-75 xl:scale-100" alt="alt here">
                 </div>
             </div>
         </div>
